@@ -120,3 +120,20 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
     end
 </pre>
 
+Modifikasi `lib/hello_world.ex` agar memiliki fungsi `main/1` sebagai entry point:
+<pre>
+❯ vim lib/hello_world.ex
+    . . .
+</pre>
+```bash
+    defmodule HelloWorld do
+      def main(_args) do
+        write_hello_world()
+      end
+    
+      def write_hello_world do
+        File.write!("hello.txt", "HELLO WORLD!")
+      end
+    end
+```
+
