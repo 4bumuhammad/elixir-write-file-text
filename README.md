@@ -86,11 +86,11 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
     defmodule HelloWorld.MixProject do
       use Mix.Project
     
-      
-      <mark>defp escript_config do
+<mark> 
+      defp escript_config do
         [main_module: HelloWorld]
-      end</mark>
-      
+      end
+</mark>
 
       def project do
         [
