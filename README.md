@@ -178,4 +178,7 @@ Check
 <pre>
 ❯ tree -L 4 -a ./ | grep *.txt
     ├── hello.txt
+
+❯ ccat hello.txt
+    HELLO WORLD!    
 </pre>
