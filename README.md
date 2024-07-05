@@ -59,3 +59,21 @@ Masuk ke direktori project
 ❯ cd hello_world
 </pre>
 
+&nbsp;
+
+&nbsp;
+
+**TAMBAHKAN FUNGSI UNTUK MENULIS FILE** <br />
+Menambahkan fungsi tersebut pada file :
+<pre>
+❯ vim lib/hello_world.ex
+    . . .
+</pre>
+```bash
+    defmodule HelloWorld do
+    def write_hello_world do
+        File.write!("hello.txt", "HELLO WORLD!")
+    end
+    end
+```
+
