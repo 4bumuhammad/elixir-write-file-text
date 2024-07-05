@@ -9,6 +9,8 @@ Buat project baru.
 </pre>
 - <details>
     <summary>Response:</summary>
+
+    ```bash
     * creating README.md
     * creating .formatter.exs
     * creating .gitignore
@@ -26,4 +28,6 @@ Buat project baru.
         mix test
 
     Run "mix help" for more commands.
+    ```
+    
   </details>
