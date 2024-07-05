@@ -71,9 +71,9 @@ Menambahkan fungsi tersebut pada file :
 </pre>
 ```bash
     defmodule HelloWorld do
-        def write_hello_world do
-            File.write!("hello.txt", "HELLO WORLD!")
-        end
+      def write_hello_world do
+        File.write!("hello.txt", "HELLO WORLD!")
+      end
     end
 ```
 
