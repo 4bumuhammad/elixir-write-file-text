@@ -203,3 +203,27 @@ Check
 If you want to read the contents of the hello.txt file created by the Elixir script, you can modify the code to add a function that reads the contents of the file and displays it to the screen. Here are the steps:
 
 &nbsp;
+
+Add a function to read the contents of the file:
+<pre>
+❯ vim lib/hello_world.ex
+    . . .
+    defmodule HelloWorld do
+      def main(_args) do
+        read_hello_world()
+      end
+    
+      def write_hello_world do
+        File.write!("hello.txt", "HELLO WORLD!")
+      end
+    
+      def read_hello_world do
+        case File.read("hello.txt") do
+          {:ok, content} ->
+            IO.puts(content)
+          {:error, reason} ->
+            IO.puts("Error reading file: #{reason}")
+        end
+      end
+    end
+</pre>
