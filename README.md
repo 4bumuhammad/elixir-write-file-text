@@ -2,7 +2,7 @@
 
 &nbsp;
 
-LANGKAH: <br />
+**LANGKAH:** <br />
 Buat project baru.
 <pre>
 ❯ mix new hello_world
