@@ -77,3 +77,5 @@ Menambahkan fungsi tersebut pada file :
     end
 ```
 
+Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` untuk memastikan `escript` diaktifkan:
+
