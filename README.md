@@ -82,7 +82,7 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
 ❯ vim mix.exs
     . . .
 </pre>
-```bash
+<pre>
     defmodule HelloWorld.MixProject do
       use Mix.Project
     
@@ -117,5 +117,5 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
         ]
       end
     end
-```
+</pre>
 
