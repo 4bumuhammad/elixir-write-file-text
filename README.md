@@ -98,7 +98,8 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
           version: "0.1.0",
           elixir: "~> 1.15",
           start_permanent: Mix.env() == :prod,
-          deps: deps()
+          deps: deps(),
+<mark>          escript: escript_config()</mark>
         ]
       end
     
