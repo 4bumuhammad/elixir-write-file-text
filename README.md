@@ -173,3 +173,9 @@ Jalankan script yang telah dibuat:
 <pre>
 ❯ ./hello_world
 </pre>
+
+Check
+<pre>
+❯ tree -L 4 -a ./ | grep *.txt
+    ├── hello.txt
+</pre>
