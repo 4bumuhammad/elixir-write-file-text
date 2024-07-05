@@ -52,4 +52,10 @@ Struture folder and files
     2 directories, 7 files
 </pre>
 
+&nbsp;
+
+Masuk ke direktori project
+<pre>
+❯ cd hello_world
+</pre>
 
