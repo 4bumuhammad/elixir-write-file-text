@@ -1,13 +1,18 @@
 defmodule HelloWorld.MixProject do
   use Mix.Project
 
+  defp escript_config do
+    [main_module: HelloWorld]
+  end
+
   def project do
     [
       app: :hello_world,
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      escript: escript_config()
     ]
   end
 

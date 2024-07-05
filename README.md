@@ -137,3 +137,36 @@ Modifikasi `lib/hello_world.ex` agar memiliki fungsi `main/1` sebagai entry poin
     end
 ```
 
+&nbsp;
+
+Jalankan perintah berikut untuk membuat escript:
+<pre>
+❯ mix escript.build
+
+    Generated hello_world app
+    Generated escript hello_world with MIX_ENV=dev
+    warning: HelloWorld.main/1 is undefined or private
+    /private/tmp/elixir-20231014-5379-11sm2cy/elixir-1.15.7/lib/mix/lib/mix/tasks/escript.build.ex:396: :hello_world_escript.main/1
+</pre>
+
+Struture folder and files
+<pre>
+❯ tree -L 4 -a ./
+    ./
+    ├── .formatter.exs
+    ├── .gitignore
+    ├── README.md
+    ├── _build
+    │   └── dev
+    │       └── lib
+    │           └── hello_world
+<mark>    ├── hello_world</mark>
+    ├── lib
+    │   └── hello_world.ex
+    ├── mix.exs
+    └── test
+        ├── hello_world_test.exs
+        └── test_helper.exs
+
+    6 directories, 8 files
+</pre>
