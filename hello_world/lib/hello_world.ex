@@ -1,6 +1,10 @@
 defmodule HelloWorld do
-  def main(_args) do
-    read_hello_world()
+  def main(args) do
+    case args do
+      ["write"] -> write_hello_world()
+      ["read"] -> read_hello_world()
+      _ -> IO.puts("Please provide 'write' or 'read' as an argument")
+    end
   end
 
   def write_hello_world do

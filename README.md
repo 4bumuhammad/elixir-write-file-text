@@ -209,8 +209,12 @@ Add a function to read the contents of the file:
 ❯ vim lib/hello_world.ex
     . . .
     defmodule HelloWorld do
-      def main(_args) do
-        read_hello_world()
+      def main(args) do
+        case args do
+          ["write"] -> write_hello_world()
+          ["read"] -> read_hello_world()
+          _ -> IO.puts("Please provide 'write' or 'read' as an argument")
+        end
       end
     
       def write_hello_world do
@@ -227,3 +231,29 @@ Add a function to read the contents of the file:
       end
     end
 </pre>
+
+Build back after changes:
+<pre>
+❯ mix escript.build
+
+    Compiling 1 file (.ex)
+    Generated escript hello_world with MIX_ENV=dev
+</pre>
+
+With this modification, you can choose whether to write or read the file based on the given arguments:
+<pre>
+❯ ./hello_world write
+
+
+❯ ./hello_world read
+    HELLO WORLD!
+</pre>
+
+
+&nbsp;
+
+&nbsp;
+
+👍🏼 **[ succeed | work ]** 👍🏼 
+
+
