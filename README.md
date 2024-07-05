@@ -199,4 +199,7 @@ Check
 
 &nbsp;
 
+**MENAMBAHKAN LAGI FUNGSI MEMBACA FILE** <br />
+If you want to read the contents of the hello.txt file created by the Elixir script, you can modify the code to add a function that reads the contents of the file and displays it to the screen. Here are the steps:
+
 &nbsp;
