@@ -1,18 +1,9 @@
 defmodule HelloWorld do
-  @moduledoc """
-  Documentation for `HelloWorld`.
-  """
+  def main(_args) do
+    write_hello_world()
+  end
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> HelloWorld.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def write_hello_world do
+    File.write!("hello.txt", "HELLO WORLD!")
   end
 end

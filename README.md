@@ -143,10 +143,8 @@ Jalankan perintah berikut untuk membuat escript:
 <pre>
 ❯ mix escript.build
 
-    Generated hello_world app
+    Compiling 1 file (.ex)
     Generated escript hello_world with MIX_ENV=dev
-    warning: HelloWorld.main/1 is undefined or private
-    /private/tmp/elixir-20231014-5379-11sm2cy/elixir-1.15.7/lib/mix/lib/mix/tasks/escript.build.ex:396: :hello_world_escript.main/1
 </pre>
 
 Struture folder and files
@@ -169,4 +167,9 @@ Struture folder and files
         └── test_helper.exs
 
     6 directories, 8 files
+</pre>
+
+Jalankan script yang telah dibuat:
+<pre>
+❯ ./hello_world
 </pre>
