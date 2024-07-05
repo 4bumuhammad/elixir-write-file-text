@@ -86,6 +86,12 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
     defmodule HelloWorld.MixProject do
       use Mix.Project
     
+      <mark> 
+      defp escript_config do
+        [main_module: HelloWorld]
+      end
+      </mark>
+
       def project do
         [
           app: :hello_world,
