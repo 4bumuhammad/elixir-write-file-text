@@ -29,5 +29,27 @@ Buat project baru.
 
     Run "mix help" for more commands.
     ```
-    
+
   </details>
+
+&nbsp;
+
+Struture folder and files
+<pre>
+❯ tree -L 4 -a ./hello_world
+
+    ./hello_world
+    ├── .formatter.exs
+    ├── .gitignore
+    ├── README.md
+    ├── lib
+    │   └── hello_world.ex
+    ├── mix.exs
+    └── test
+        ├── hello_world_test.exs
+        └── test_helper.exs
+
+    2 directories, 7 files
+</pre>
+
+
