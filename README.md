@@ -2,8 +2,8 @@
 
 &nbsp;
 
-**LANGKAH:** <br />
-Buat project baru.
+**STEPS:** <br />
+Create a new project.
 <pre>
 ❯ mix new hello_world
 </pre>
@@ -54,7 +54,7 @@ Struture folder and files
 
 &nbsp;
 
-Masuk ke direktori project
+Enter the project directory
 <pre>
 ❯ cd hello_world
 </pre>
@@ -63,8 +63,8 @@ Masuk ke direktori project
 
 &nbsp;
 
-**TAMBAHKAN FUNGSI UNTUK MENULIS FILE** <br />
-Menambahkan fungsi tersebut pada file :
+**ADD A FUNCTION TO WRITE FILES** <br />
+Add the function to the:
 <pre>
 ❯ vim lib/hello_world.ex
     . . .
@@ -77,7 +77,7 @@ Menambahkan fungsi tersebut pada file :
     end
 ```
 
-Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` untuk memastikan `escript` diaktifkan:
+Open the `mix.exs` file and add the following code inside the `"def project do"` block to ensure `escript` is enabled:
 <pre>
 ❯ vim mix.exs
     . . .
@@ -120,7 +120,7 @@ Buka file `mix.exs` dan tambahkan kode berikut di dalam blok `"def project do"` 
     end
 </pre>
 
-Modifikasi `lib/hello_world.ex` agar memiliki fungsi `main/1` sebagai entry point:
+Modify `lib/hello_world.ex` to have the `main/1` function as the entry point:
 <pre>
 ❯ vim lib/hello_world.ex
     . . .
@@ -139,7 +139,7 @@ Modifikasi `lib/hello_world.ex` agar memiliki fungsi `main/1` sebagai entry poin
 
 &nbsp;
 
-Jalankan perintah berikut untuk membuat escript:
+Run the following command to create an escript:
 <pre>
 ❯ mix escript.build
 
@@ -169,7 +169,7 @@ Struture folder and files
     6 directories, 8 files
 </pre>
 
-Jalankan script yang telah dibuat:
+Run the script that has been created:
 <pre>
 ❯ ./hello_world
 </pre>
